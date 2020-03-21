@@ -4,5 +4,10 @@
   "main": "index.js",
   "repository": "https://github.com/kawarimidoll/vuepress-plugin-tailwind.git",
   "author": "kawarimidoll <kawarimidoll+git@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4",
+    "tailwindcss": "^1.2.0"
+  }
 }
