@@ -1,0 +1,8 @@
+{
+  "name": "vuepress-plugin-tailwind",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/kawarimidoll/vuepress-plugin-tailwind.git",
+  "author": "kawarimidoll <kawarimidoll+git@gmail.com>",
+  "license": "MIT"
+}
