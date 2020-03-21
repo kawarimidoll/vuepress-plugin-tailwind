@@ -2,7 +2,7 @@
 
 VuePress plugin to use `tailwindcss` and `postcss-purgecss` easily.
 
-This plugin is a wrapper of [official installation flow of Tailwind CSS](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-theme-values).
+This plugin is a wrapper of [official installation flow of Tailwind CSS](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css).
 
 ## Usage
 
