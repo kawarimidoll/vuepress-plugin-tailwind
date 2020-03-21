@@ -1,9 +1,12 @@
 {
-  "name": "vuepress-plugin-tailwind",
+  "name": "@kawarimidoll/vuepress-plugin-tailwind",
+  "description": "VuePress plugin to use tailwindcss and postcss-purgecss easily",
   "version": "0.0.1",
   "main": "index.js",
+  "keywords": ["vuepress", "plugin", "tailwind", "purgecss", "style", "css"],
   "repository": "https://github.com/kawarimidoll/vuepress-plugin-tailwind.git",
   "author": "kawarimidoll <kawarimidoll+git@gmail.com>",
+  "files": ["index.js", "README.md"],
   "license": "MIT",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
