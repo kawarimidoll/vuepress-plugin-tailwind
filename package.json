@@ -11,12 +11,17 @@
     "style",
     "css"
   ],
-  "repository": "https://github.com/kawarimidoll/vuepress-plugin-tailwind.git",
-  "author": "kawarimidoll <kawarimidoll+git@gmail.com>",
-  "files": [
-    "index.js",
-    "README.md"
-  ],
+  "author": {
+    "name": "kawarimidoll",
+    "email": "kawarimidoll+git@gmail.com",
+    "url": "https://github.com/kawarimidoll",
+  },
+  "repository": {
+  	"type": "git",
+  	"https://github.com/kawarimidoll/vuepress-plugin-tailwind.git"
+  },
+  "bugs": "https://github.com/kawarimidoll/vuepress-plugin-tailwind/issues",
+  "files": ["index.js", "README.md"],
   "license": "MIT",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
