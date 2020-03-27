@@ -1,6 +1,9 @@
 # @kawarimidoll/vuepress-plugin-tailwind
 
-VuePress plugin to use `tailwindcss` and `postcss-purgecss` easily.
+[![NPM VERSION](https://img.shields.io/npm/v/@kawarimidoll/vuepress-plugin-tailwind?style=for-the-badge)](https://www.npmjs.com/package/@kawarimidoll/vuepress-plugin-tailwind)
+[![LICENCE](https://img.shields.io/github/license/kawarimidoll/vuepress-plugin-tailwind?style=for-the-badge)](https://github.com/kawarimidoll/vuepress-plugin-tailwind/blob/master/LICENSE)
+
+A VuePress plugin to use `tailwindcss` and `postcss-purgecss` easily.
 
 This plugin is a wrapper of [official installation flow of Tailwind CSS](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css).
 
@@ -12,7 +15,7 @@ This plugin is a wrapper of [official installation flow of Tailwind CSS](https:/
 yarn add @kawarimidoll/vuepress-plugin-tailwind
 ```
 
-2. Add import statement in `.vuepress/styles/index.styl` with [whitelisting feature](https://purgecss.com/whitelisting.html#in-the-css-directly) :
+2. Add import statement to the top of `.vuepress/styles/index.styl` with [whitelisting feature](https://purgecss.com/whitelisting.html#in-the-css-directly) :
 
 ```styl
 /* purgecss start ignore */
