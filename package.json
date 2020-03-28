@@ -17,15 +17,17 @@
     "url": "https://github.com/kawarimidoll"
   },
   "repository": {
-  	"type": "git",
-  	"url": "https://github.com/kawarimidoll/vuepress-plugin-tailwind.git"
+    "type": "git",
+    "url": "https://github.com/kawarimidoll/vuepress-plugin-tailwind.git"
   },
   "bugs": "https://github.com/kawarimidoll/vuepress-plugin-tailwind/issues",
-  "files": ["index.js", "README.md"],
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "license": "MIT",
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
-    "autoprefixer": "^9.7.4",
     "tailwindcss": "^1.2.0"
   },
   "publishConfig": {
