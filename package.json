@@ -14,11 +14,11 @@
   "author": {
     "name": "kawarimidoll",
     "email": "kawarimidoll+git@gmail.com",
-    "url": "https://github.com/kawarimidoll",
+    "url": "https://github.com/kawarimidoll"
   },
   "repository": {
   	"type": "git",
-  	"https://github.com/kawarimidoll/vuepress-plugin-tailwind.git"
+  	"url": "https://github.com/kawarimidoll/vuepress-plugin-tailwind.git"
   },
   "bugs": "https://github.com/kawarimidoll/vuepress-plugin-tailwind/issues",
   "files": ["index.js", "README.md"],
