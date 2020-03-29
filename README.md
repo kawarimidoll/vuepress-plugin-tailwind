@@ -1,11 +1,14 @@
 # @kawarimidoll/vuepress-plugin-tailwind
 
-[![NPM VERSION](https://img.shields.io/npm/v/@kawarimidoll/vuepress-plugin-tailwind?style=for-the-badge)](https://www.npmjs.com/package/@kawarimidoll/vuepress-plugin-tailwind)
+[![NPM VERSION](https://img.shields.io/npm/v/@kawarimidoll/vuepress-plugin-tailwind?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@kawarimidoll/vuepress-plugin-tailwind)
+[![DEPENDABOT](https://img.shields.io/badge/dependabot-enabled-blue?style=for-the-badge&logo=dependabot)](https://github.com/kawarimidoll/vuepress-plugin-tailwind/pulls?q=dependabot)
 [![LICENCE](https://img.shields.io/github/license/kawarimidoll/vuepress-plugin-tailwind?style=for-the-badge)](https://github.com/kawarimidoll/vuepress-plugin-tailwind/blob/master/LICENSE)
 
-A VuePress plugin to use `tailwindcss` and `postcss-purgecss` easily.
+A VuePress plugin to use [`tailwindcss`](https://github.com/tailwindcss/tailwindcss) and [`postcss-purgecss`](https://github.com/FullHuman/purgecss) easily.
 
-This plugin is a wrapper of [official installation flow of Tailwind CSS](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css).
+With this plugin, you can use any classes defined by Tailwind CSS, and the unused classes are automatically purged by PurgeCSS (production only).
+
+This plugin is based on [the official guide of Tailwind CSS](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css).
 
 ## Usage
 
@@ -15,7 +18,7 @@ This plugin is a wrapper of [official installation flow of Tailwind CSS](https:/
 yarn add @kawarimidoll/vuepress-plugin-tailwind
 ```
 
-2. Add import statement to the top of `.vuepress/styles/index.styl` with [whitelisting feature](https://purgecss.com/whitelisting.html#in-the-css-directly) :
+2. Add `@tailwind` import statements to the beginning of `.vuepress/styles/index.styl` with [whitelisting feature](https://purgecss.com/whitelisting.html#in-the-css-directly) :
 
 ```styl
 /* purgecss start ignore */
@@ -23,9 +26,11 @@ yarn add @kawarimidoll/vuepress-plugin-tailwind
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+// Add your style definitions...
 ```
 
-3. Load the plugin in `.vuepress/config.js` :
+3. Load this plugin in `.vuepress/config.js` :
 
 ```js
 module.exports = {
@@ -46,7 +51,7 @@ _These configuration files are not created automatically. You have to create the
 
 - default: `undefined`
 
-See [Configuration guide of Tailwind CSS](https://tailwindcss.com/docs/configuration/).
+If you want to use this option, refer to [the Tailwind CSS configuration guide](https://tailwindcss.com/docs/configuration/).
 
 ### purgecssConfig
 
@@ -63,7 +68,8 @@ See [Configuration guide of Tailwind CSS](https://tailwindcss.com/docs/configura
 }
 ```
 
-See [Configuration guide of PurgeCSS](https://purgecss.com/configuration.html).
+This default value is adjusted for VuePress from [the description](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css) to include all files in the source directory and all plugins with "vuepress" in the name.
+If you want to use this option, refer to [the PurgeCSS configuration guide](https://purgecss.com/configuration.html).
 
 :bulb:
 _`sourceDir`, `vuepressDir` and `cwd` above are [Context API](https://vuepress.vuejs.org/plugin/context-api.html) of VuePress._
