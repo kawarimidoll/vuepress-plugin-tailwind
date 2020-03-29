@@ -1,6 +1,7 @@
 # @kawarimidoll/vuepress-plugin-tailwind
 
-[![NPM VERSION](https://img.shields.io/npm/v/@kawarimidoll/vuepress-plugin-tailwind?style=for-the-badge)](https://www.npmjs.com/package/@kawarimidoll/vuepress-plugin-tailwind)
+[![NPM VERSION](https://img.shields.io/npm/v/@kawarimidoll/vuepress-plugin-tailwind?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@kawarimidoll/vuepress-plugin-tailwind)
+[![DEPENDABOT](https://img.shields.io/badge/dependabot-enabled-blue?style=for-the-badge&logo=dependabot)](https://github.com/kawarimidoll/vuepress-plugin-tailwind/pulls?q=dependabot)
 [![LICENCE](https://img.shields.io/github/license/kawarimidoll/vuepress-plugin-tailwind?style=for-the-badge)](https://github.com/kawarimidoll/vuepress-plugin-tailwind/blob/master/LICENSE)
 
 A VuePress plugin to use [`tailwindcss`](https://github.com/tailwindcss/tailwindcss) and [`postcss-purgecss`](https://github.com/FullHuman/purgecss) easily.
@@ -17,7 +18,7 @@ This plugin is based on [the official guide of Tailwind CSS](https://tailwindcss
 yarn add @kawarimidoll/vuepress-plugin-tailwind
 ```
 
-2. Add an import statement to the beginning of `.vuepress/styles/index.styl` with [whitelisting feature](https://purgecss.com/whitelisting.html#in-the-css-directly) :
+2. Add `@tailwind` import statements to the beginning of `.vuepress/styles/index.styl` with [whitelisting feature](https://purgecss.com/whitelisting.html#in-the-css-directly) :
 
 ```styl
 /* purgecss start ignore */
@@ -25,6 +26,8 @@ yarn add @kawarimidoll/vuepress-plugin-tailwind
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+// Add your style definitions...
 ```
 
 3. Load this plugin in `.vuepress/config.js` :
