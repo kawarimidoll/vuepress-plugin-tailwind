@@ -68,7 +68,7 @@ If you want to use this option, refer to [the Tailwind CSS configuration guide](
 }
 ```
 
-This default value is adjusted for VuePress from [the description](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css) to include all files in the source directory and all plugins with "vuepress" in the name.
+This default value is adjusted for VuePress from [the document](https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css) to include all files in the source directory and all plugins with "vuepress" in the name.
 If you want to use this option, refer to [the PurgeCSS configuration guide](https://purgecss.com/configuration.html).
 
 :bulb:
@@ -77,7 +77,6 @@ _`sourceDir`, `vuepressDir` and `cwd` above are [Context API](https://vuepress.v
 :warning:
 _If you use `purgecssConfig`, the default value is overwritten, not merged._
 
-## Licence
+## License
 
-MIT
-
+[MIT](https://github.com/kawarimidoll/vuepress-plugin-tailwind/blob/master/LICENSE)
