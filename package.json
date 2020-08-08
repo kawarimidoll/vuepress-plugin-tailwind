@@ -1,7 +1,7 @@
 {
   "name": "@kawarimidoll/vuepress-plugin-tailwind",
   "description": "A VuePress plugin to use tailwindcss and postcss-purgecss easily",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "index.js",
   "keywords": [
     "vuepress",
