@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "tailwindcss": "^1.2.0"
   },
   "publishConfig": {
