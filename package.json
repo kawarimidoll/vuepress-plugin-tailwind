@@ -30,6 +30,14 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix"
   },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "tailwindcss": "^1.2.0"
@@ -39,6 +47,8 @@
   },
   "devDependencies": {
     "eslint": "^7.13.0",
-    "eslint-plugin-vue": "^7.1.0"
+    "eslint-plugin-vue": "^7.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.1"
   }
 }
