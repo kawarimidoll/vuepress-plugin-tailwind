@@ -31,7 +31,8 @@
     "clean": "rimraf docs/.vuepress/dist",
     "dev": "vuepress dev docs --no-clear-screen",
     "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "test": "sh scripts/test.sh"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
