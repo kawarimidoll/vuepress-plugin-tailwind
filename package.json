@@ -43,8 +43,7 @@
     }
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": ">1.4"
   },
   "publishConfig": {
     "access": "public"
