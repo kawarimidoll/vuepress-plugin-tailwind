@@ -43,7 +43,7 @@
     }
   },
   "dependencies": {
-    "tailwindcss": ">1.4.0"
+    "tailwindcss": "^1.4.0"
   },
   "publishConfig": {
     "access": "public"
