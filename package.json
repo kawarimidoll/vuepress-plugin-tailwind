@@ -43,7 +43,7 @@
     }
   },
   "dependencies": {
-    "tailwindcss": "^1.4.0"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "publishConfig": {
     "access": "public"
