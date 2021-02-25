@@ -1,0 +1,36 @@
+name: Compatibility Score Badge
+# https://qiita.com/frozenbonito/items/916457f324b520a403a6
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  badge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Badge compatibility score
+        uses: actions/github-script@v3.1
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            if (pr.user.type !== 'Bot' || pr.user.login !== 'dependabot[bot]') {
+              return 'author is not dependabot';
+            }
+            const badgeRegex =
+              /\[!\[Dependabot compatibility score\]\(https:\/\/dependabot-badges.githubapp.com\/badges\/compatibility_score\?(.*)\)\]/;
+            const match = pr.body.match(badgeRegex);
+            if (match == null || match.length < 2) {
+              return 'compatibility badge is not found';
+            }
+            const query = match[1];
+            const badgeURL = `https://api.dependabot.com/badges/compatibility_score?${query}`;
+            const detailURL = `https://dependabot.com/compatibility-score/?${query}`;
+            const badge = `[![Dependabot compatibility score](${badgeURL})](${detailURL})`;
+            await github.issues.createComment({
+              issue_number: pr.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Dependabot-Preview score\n\n${badge}`
+            })
