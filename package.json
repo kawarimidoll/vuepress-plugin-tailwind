@@ -32,15 +32,14 @@
     "dev": "vuepress dev docs --no-clear-screen",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
+    "postinstall": "husky install",
+    "postpublish": "pinst --enable",
+    "prepublishOnly": "pinst --disable",
     "test": "sh scripts/test.sh"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "*.{js,vue}": "eslint",
+    "*.{js,vue,json,md}": "prettier --write"
   },
   "dependencies": {
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
@@ -53,6 +52,7 @@
     "eslint-plugin-vue": "^7.1.0",
     "husky": "^5.0.9",
     "lint-staged": "^10.5.1",
+    "pinst": "^2.1.6",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2",
     "vuepress": "^1.7.1"
