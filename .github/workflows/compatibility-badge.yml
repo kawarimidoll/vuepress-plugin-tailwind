@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Badge compatibility score
-        uses: actions/github-script@v3.1
+        uses: actions/github-script@v4.0.1
         with:
           script: |
             const pr = context.payload.pull_request;
