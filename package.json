@@ -48,7 +48,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "eslint": "^7.13.0",
+    "eslint": "^8.0.1",
     "eslint-plugin-vue": "^7.1.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.0.0",
